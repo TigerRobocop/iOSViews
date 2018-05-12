@@ -35,17 +35,17 @@ class MyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "my_cell", for: indexPath)
         
-        if indexPath.section == 0 {
-            let stringValue = stringRepo.get(at: indexPath.row)
-            cell.textLabel?.text = stringValue
-            cell.detailTextLabel?.text = "No details"
-            cell.imageView?.image = #imageLiteral(resourceName: "hangloose")
-        } else {
-            let stringValue = section2values[indexPath.row]
-            cell.textLabel?.text = stringValue
-            cell.detailTextLabel?.text = "No details 1"
-            cell.imageView?.image = #imageLiteral(resourceName: "rock")
-        }
+//        if indexPath.section == 0 {
+//            let stringValue = stringRepo.get(at: indexPath.row)
+//            cell.textLabel?.text = stringValue
+//            cell.detailTextLabel?.text = "No details"
+//            cell.imageView?.image = #imageLiteral(resourceName: "hangloose")
+//        } else {
+//            let stringValue = section2values[indexPath.row]
+//            cell.textLabel?.text = stringValue
+//            cell.detailTextLabel?.text = "No details 1"
+//            cell.imageView?.image = #imageLiteral(resourceName: "rock")
+//        }
         
         return cell
     }
