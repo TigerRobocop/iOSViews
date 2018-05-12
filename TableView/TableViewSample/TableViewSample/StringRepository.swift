@@ -12,8 +12,7 @@ class StringRepository {
     
     var listOfStrings = ["Rainbow", "Banana", "Social"]
     
-    static var singleton: StringRepository?
-    
+    private static var singleton: StringRepository?
     
     static var instance: StringRepository {
         get {
@@ -22,6 +21,10 @@ class StringRepository {
             }
             return singleton!
         }
+    }
+    
+    func size() -> Int {
+        return listOfStrings.count
     }
     
     func insert(value: String) {
